@@ -7,8 +7,9 @@ editor:
     config:
         contentsCss: "EXT:{{ package.extensionKey }}/Resources/Public/Css/rte.css"
 
-        stylesSet:
-            - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
+        style:
+            definitions:
+                - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
 
         toolbarGroups:
             - { name: styles, groups: [ format, styles ] }
